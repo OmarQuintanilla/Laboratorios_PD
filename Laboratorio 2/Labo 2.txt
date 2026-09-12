@@ -1,0 +1,53 @@
+1. Si la información no es completa para oferentes y demandantes, hay una falla de mercado.
+
+Sujeto: la información
+
+Predicados: no es completa para oferentes / no es completa para demandantes / hay una falla de mercado
+
+Si tomamos:
+
+p: La información es completa para oferentes.
+
+q: La información es completa para demandantes.
+
+r: Hay una falla de mercado.
+
+Forma simbólica:
+
+(¬p∧¬q)→r
+
+2. He pasado todas mis vacaciones en Grecia y Marruecos.
+
+Sujeto: Tacito: yo.
+
+Predicados: he pasado todas mis vacaciones en Grecia / he pasado todas mis vacaciones en Marruecos
+
+Si se toma:
+
+p: He pasado todas mis vacaciones en Grecia.
+
+q: He pasado todas mis vacaciones en Marruecos.
+
+Forma simbólica:
+
+p∧q
+
+3. La realidad supera a la ficción y él no puede creerlo.
+
+Sujeto: la realidad
+
+Predicado: supera a la ficción
+
+Sujeto: él
+
+Predicado: no puede creerlo, es decir, puede creerlo negado
+
+Tomamos como:
+
+p: La realidad supera a la ficción.
+
+q: Él puede creerlo.
+
+Forma simbólica:
+
+p∧¬q
