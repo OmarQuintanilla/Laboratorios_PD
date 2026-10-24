@@ -11,9 +11,6 @@ import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 
 public class Window extends JFrame {
-    private static final String[] EJEMPLOS = {
-            "x", "log(x)", "3*x^2", "2^x"
-    };
     private final TextField txtEntrada = new TextField("Ej: 5, 3");
     private final PanelResult panelResultado = new PanelResult();
     private final JLabel lblEstado = new JLabel(" ");
