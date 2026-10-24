@@ -16,8 +16,8 @@ public class Window extends JFrame {
     private final JLabel lblEstado = new JLabel(" ");
     public Window(Connection motor) {
         super("Cálculo simbólico en Prolog");
-// Enter en el campo = derivar
-        txtEntrada.addActionListener(e -> ejecutar(motor, "d"));
+// Enter en el campo = sumar
+        txtEntrada.addActionListener(e -> ejecutar(motor, "s"));
         JPanel contenido = new JPanel();
         contenido.setLayout(new BoxLayout(contenido, BoxLayout.Y_AXIS));
         contenido.setOpaque(false);
@@ -56,16 +56,16 @@ public class Window extends JFrame {
     }
 
     private JPanel crearBotones(Connection motor) {
-        Buttons btnDerivar = new Buttons("Sumar", Theme.BLUE, Theme.BG,
+        Buttons btnSumar = new Buttons("Sumar", Theme.BLUE, Theme.BG,
                 26, 11, 14);
-        Buttons btnIntegrar = new Buttons("Restar", Theme.GREEN, Theme.BG,
+        Buttons btnRestar = new Buttons("Restar", Theme.GREEN, Theme.BG,
                 26, 11, 14);
-        btnDerivar.addActionListener(e -> ejecutar(motor, "s"));
-        btnIntegrar.addActionListener(e -> ejecutar(motor, "r"));
+        btnSumar.addActionListener(e -> ejecutar(motor, "s"));
+        btnRestar.addActionListener(e -> ejecutar(motor, "r"));
         JPanel p = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 0));
         p.setOpaque(false);
-        p.add(btnDerivar);
-        p.add(btnIntegrar);
+        p.add(btnSumar);
+        p.add(btnRestar);
         return p;
     }
     private JPanel crearPie() {
